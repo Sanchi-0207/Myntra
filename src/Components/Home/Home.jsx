@@ -1,11 +1,11 @@
 import React from 'react'
-import "./Home.css";
+import "./Home.css"
 import download from "../../assets/download.jpeg";
 
 const Home = () => {
   return (
     <>
-      <section className="container section1">
+      <section className="section1 min-h-screen flex justify-center items-center flex-col">
         <img className="homeImg" src={download} />
         <img
           className="homeImg"
@@ -16,7 +16,7 @@ const Home = () => {
           src="https://assets.myntassets.com/f_webp,w_980,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/7/1e599d37-1ed6-4e39-9057-ffb4065173b51651897264796-Unbelievable-Deals.jpg"
         />
       </section>
-      <section className="container section1 flex flex-wrap">
+      <section className=" justify-center items-center  section1 flex flex-wrap">
         <img
           className="itemImg"
           src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/2/5d1b7ad3-c3ed-4ef9-a654-18231743d3cd1651484798059-Anouk-Inddus.jpg"
@@ -46,7 +46,6 @@ const Home = () => {
           src="https://assets.myntassets.com/f_webp,w_140,c_limit,fl_progressive,dpr_2.0/assets/images/2022/5/2/a802fc48-8f5b-4d69-97ab-e6a3cf3fb70c1651484798800-USPA-_Flying_Machine.jpg"
         />
       </section>
-      <section className="tall"></section>
       <footer>Copyright © myntra.com | All rights reserved</footer>
     </>
   );

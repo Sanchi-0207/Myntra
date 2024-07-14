@@ -2,7 +2,9 @@ import React from 'react'
 import Post from './Posts/Post'
 function Community() {
   return (
-    <div>
+    <div className='flex flex-col py-4 gap-4'>
+        <Post/>
+        <Post/>
         <Post/>
     </div>
   )

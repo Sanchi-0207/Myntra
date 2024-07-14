@@ -22,18 +22,19 @@ const OutfitMaker = () => {
   return (
     <div className="min-h-screen md:flex ">
       <div className="left  p-3 w-full  bg-slate-100  md:w-[70%] flex justify-center item center">
-        <div className="container p-3 flex justify-center ">
-          <div className="img-container grid grid-cols-3 gap-5">
-            {outfit.length && outfit.map((img, id) => (
-              <div className="img-card">
-                <img
-                  key={id}
-                  className=" w-64  h-80 object-cover "
-                  src={img}
-                  alt="product"
-                />
-              </div>
-            ))}
+        <div className=" p-2  ">
+          <div className="img-container grid grid-cols-3 gap-2">
+            {outfit.length &&
+              outfit.map((img, id) => (
+                <div className="img-card">
+                  <img
+                    key={id}
+                    className=" w-64  h-80 object-cover "
+                    src={img}
+                    alt="product"
+                  />
+                </div>
+              ))}
           </div>
         </div>
       </div>
@@ -45,8 +46,8 @@ const OutfitMaker = () => {
             authenticity with creativity to leave an indelible mark."
           </p>
         </div>
-        <div className="btn flex flex-col gap-3 ">
-          <button className=" ">
+        <div className="btn flex flex-col gap-5 ">
+          <div className=" ">
             <div className="relative">
               <button
                 id="dropdownButton"
@@ -68,23 +69,25 @@ const OutfitMaker = () => {
                       onChange={handleImageChange}
                       className="hidden"
                     />
-                    <label htmlFor="file-input" className=" cursor-pointer">
+                    <label
+                      htmlFor="file-input"
+                      className="block px-4 py-2 text-sm text-black font-normal cursor-pointer">
                       Add from Device
                     </label>
                   </li>
                   <li>
                     <Link
-                     to="/productinfo"
-                      className="block px-4 py-2 text-sm text-black font-normal">
+                      to="/"
+                      className="block px-4 py-2 text-sm text-black font-normal cursor-pointer">
                       Continue On Myntra
                     </Link>
                   </li>
                 </ul>
               </div>
             </div>
-          </button>
+          </div>
           <button className="  text-white text-xl font-bold  w-80 p-3 bg-[#FF3E6C] rounded-md">
-            Upload Outfit
+            <Link to="/community">Upload Outfit</Link>
           </button>
         </div>
       </div>
