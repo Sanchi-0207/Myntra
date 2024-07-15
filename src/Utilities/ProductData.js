@@ -64,7 +64,73 @@ export const Products = [
         "current_price": 2199,
         "original_price": 3199,
         "discount": "10%",
-        "product_title": "Ruffle Sleeve Crop Top",
+        "product_title": "Ruffled Crop Top",
         "sizes": ["XS", "S", "M", "L"]
-    }
+    },
+    {
+        "brand_name": "Fashionista",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1njl__VBIjJ1tWjLG6b-sEr6IMAQ-2EuMog&s",
+        "product_type": "Crop Top",
+        "ratings": 4.3,
+        "current_price": 2199,
+        "original_price": 3199,
+        "discount": "10%",
+        "product_title": "Black Denim",
+        "sizes": ["XS", "S", "M", "L"]
+    },
+    {
+        "brand_name": "Fashionista",
+        "imgUrl": "https://m.media-amazon.com/images/I/71Dr401s4LL._SX679_.jpg",
+        "product_type": "Crop Top",
+        "ratings": 4.3,
+        "current_price": 2199,
+        "original_price": 3199,
+        "discount": "10%",
+        "product_title": "Black Wide Leg Jeans",
+        "sizes": ["XS", "S", "M", "L"]
+    },
+    {
+        "brand_name": "Fashionista",
+        "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnXJ0iKd09thOUzrzhr1kl1TdkI80v2LpBeA&s",
+        "product_type": "Crop Top",
+        "ratings": 4.3,
+        "current_price": 2199,
+        "original_price": 3199,
+        "discount": "10%",
+        "product_title": "Blue Joggers",
+        "sizes": ["XS", "S", "M", "L"]
+    },
+    {
+        "brand_name": "Fashionista",
+        "imgUrl": "https://images.meesho.com/images/products/100946993/hqiqt_512.webp",
+        "product_type": "Crop Top",
+        "ratings": 4.3,
+        "current_price": 2199,
+        "original_price": 3199,
+        "discount": "10%",
+        "product_title": "Ankle Length Blue Denim",
+        "sizes": ["XS", "S", "M", "L"]
+    },
+    {
+        "brand_name": "Fashionista",
+        "imgUrl": "https://images.only.com/15281260/4102401/001/only-onlkenyamidwaistkickflaredjeans-blue.jpg?v=d2384604c219d3489e9df131769ba02f",
+        "product_type": "Crop Top",
+        "ratings": 4.3,
+        "current_price": 2199,
+        "original_price": 3199,
+        "discount": "10%",
+        "product_title": "Low Rise Blue Denim",
+        "sizes": ["XS", "S", "M", "L"]
+    },
+    {
+        "brand_name": "Fashionista",
+        "imgUrl": "https://img.ltwebstatic.com/images3_pi/2023/08/11/5a/169175770852e58561db60c85ac18eeebd5d4b319c_thumbnail_720x.jpg",
+        "product_type": "Crop Top",
+        "ratings": 4.3,
+        "current_price": 2199,
+        "original_price": 3199,
+        "discount": "10%",
+        "product_title": "Slim Fit Blue Denim",
+        "sizes": ["XS", "S", "M", "L"]
+    },
 ]

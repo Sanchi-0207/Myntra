@@ -6,31 +6,32 @@ import { CiSearch } from "react-icons/ci";
 import logo from "../assets/logo.png"
 import { Link } from 'react-router-dom';
 const NavBar = () => {
+  // const listItem=["Men" , "Women" , "Kids" , "Home & Living" , "Beauty" , "Studio"]
   return (
-    <div className="navBar h-24 p-3 flex justify-between shadow-2xl">
+    <div className="sticky top-0 navBar h-24 p-3 flex justify-between shadow-2xl bg-slate-50 *:">
       <div className="left-list w-1/2 flex justify-between items-center ">
         <Link to="/">
           <img src={logo} alt="" />
         </Link>
         <div>
-          <p className="font-bold">Men</p>
+          <p className="font-bold cursor-pointer hover:text-pink-600">Men</p>
         </div>
         <div>
           <Link to="/womensection">
-            <p className="font-bold">Women</p>
+            <p className="font-bold cursor-pointer hover:text-pink-600">Women</p>
           </Link>
         </div>
         <div>
-          <p className="font-bold">Kids</p>
+          <p className="font-bold cursor-pointer hover:text-pink-600">Kids</p>
         </div>
         <div>
-          <p className="font-bold">Home & Living</p>
+          <p className="font-bold cursor-pointer hover:text-pink-600">Home & Living</p>
         </div>
         <div>
-          <p className="font-bold">Beauty</p>
+          <p className="font-bold cursor-pointer hover:text-pink-600">Beauty</p>
         </div>
         <div>
-          <p className="font-bold">Studio</p>
+          <p className="font-bold cursor-pointer hover:text-pink-600">Studio</p>
         </div>
       </div>
 
@@ -54,15 +55,15 @@ const NavBar = () => {
           </div>
         </div>
         <div className="flex justify-between items-center w-1/4">
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col cursor-pointer hover:text-pink-600 justify-center items-center">
             <BsPerson />
             <p>Profile</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col cursor-pointer hover:text-pink-600 justify-center items-center">
             <IoIosHeartEmpty />
             <p>Wishlist</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col cursor-pointer hover:text-pink-600 justify-center items-center">
             <BsHandbag />
             <p>Bag</p>
           </div>

@@ -1,19 +1,30 @@
 import React , {useContext, useState} from 'react'
-import { Link } from 'react-router-dom';
+import { uploadToCloudinary } from '../Utilities/Cloudinary/uploadToCloudinary ';
+import { uploadPosts } from '../Services/UploadPost';
+import { Link, useNavigate } from 'react-router-dom';
 import { MyContext } from '../Utilities/Context/ContextProvider';
 
 
 const OutfitMaker = () => {
+  const navigate = useNavigate()
   const [isOpen, setIsOpen] = useState(false);
  const {outfit ,setOutfit}=useContext(MyContext)
-     const handleImageChange = (event) => {
+
+
+     const  handleImageChange =async (event) => {
        const files = event.target.files;
-       const newImageSrcs = Array.from(files).map((file) =>
-         URL.createObjectURL(file)
-       );
-       setOutfit((prevImageSrc) => [...prevImageSrc, ...newImageSrcs]);
+       console.log(files[0]);
+            const url= await uploadToCloudinary(files[0]);
+       setOutfit((prevImageSrc) => [...prevImageSrc, url]);
      };
-  console.log(outfit.length)
+
+const handlePosts = () => {
+  console.log(outfit)
+  uploadPosts(outfit).then((res) => {
+    navigate("/community");
+  });
+};
+
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
@@ -86,8 +97,10 @@ const OutfitMaker = () => {
               </div>
             </div>
           </div>
-          <button className="  text-white text-xl font-bold  w-80 p-3 bg-[#FF3E6C] rounded-md">
-            <Link to="/community">Upload Outfit</Link>
+          <button
+            onClick={handlePosts}
+            className="  text-white text-xl font-bold  w-80 p-3 bg-[#FF3E6C] rounded-md">
+            Upload Outfit
           </button>
         </div>
       </div>
